@@ -1,0 +1,14 @@
+/logs/
+!/logs/.gitkeep
+
+###> symfony/framework-bundle ###
+source/.env.local
+source/.env.local.php
+source/.env.*.local
+source/config/secrets/prod/prod.decrypt.private.php
+source/public/bundles/
+source/var/
+source/vendor/
+###< symfony/framework-bundle ###
+
+.idea

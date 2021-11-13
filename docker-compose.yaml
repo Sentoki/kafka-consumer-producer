@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  nginx:
+    build:
+      context: docker/nginx
+      dockerfile: Dockerfile
+    volumes:
+      - ./source:/app
+      - ./logs:/logs
+    expose:
+      - "80"
+    ports:
+      - "88:80"
+  php:
+    build:
+      context: docker/php
+      dockerfile: Dockerfile
+    volumes:
+      - ./source:/app
+      - ./logs:/logs
